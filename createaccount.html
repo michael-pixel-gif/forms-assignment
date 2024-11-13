@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+    <link rel="stylesheet" type="text/css" href="createaccount.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Create Account</h1>
+            <p>Fill in the details to get started</p>
+        </header>
+        <br>
+    <main>
+        <form>
+            <div class="name"></div>
+            <label for="name">Full Name *</label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+            <br>
+            <label for="email">Email Address *</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+            <br>
+            <label for="password">Password *</label>
+            <br>
+            <input type="password" id="password" name="password" required>
+            <p>Must be atleast 8 Charcters long</p>
+            <br>
+            <label for="role">Role</label>
+            <br>
+            <select id="role" name="role" required>
+                <option value="">Select a Role</option>
+            </select>
+            <br>
+            <label for="message">Bio</label>
+            <br>
+            <textarea id="message" name="message" rows="4" cols="65" placeholder="Tell Us About Your Self"></textarea>
+            <p>Keep it short and sweet</p>
+            <br>
+            <input type="checkbox" id="terms" name="terms" value="terms">
+            <label id="terms" for="terms">I agree to the Terms and Conditions *</label>
+        </form>
+        <button>Create Account</button>
+    </main>
+</body>
+</html>
